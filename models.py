@@ -4,8 +4,8 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy import Column, String, Integer
 
 # db settings
-dbuser = 'user' #DB username
-dbpass = 'password' #DB password
+dbuser = 'root' #DB username
+dbpass = 'root' #DB password
 dbhost = 'localhost' #DB host
 dbname = 'scrapyspiders' #DB database name
 engine = create_engine("mysql://%s:%s@%s/%s?charset=utf8&use_unicode=0"
