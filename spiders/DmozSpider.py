@@ -17,6 +17,11 @@ class DmozSpider(scrapy.Spider):
         "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
         "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
     ]
+    custom_settings = {
+        'EXTENSIONS':   {
+            'arachne.pipelines.ExportJSON': 100
+        }
+    }
 
     def parse(self, response):
         for sel in response.xpath('//ul/li'):

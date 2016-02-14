@@ -13,6 +13,11 @@ class CraigslistSpider(scrapy.Spider):
     name = "cl-spider"
     allowed_domains = "craigslist.org"
     start_urls = ['http://newyork.craigslist.org/search/tia#list']
+    custom_settings = {
+        'EXTENSIONS':   {
+            'arachne.pipelines.ExportJSON': 100
+        }
+    }
 
     def parse(self, response):
         sites = response.css('#searchform > div.rightpane > div.content > p')
@@ -23,5 +28,4 @@ class CraigslistSpider(scrapy.Spider):
             item['url'] = site.css('a::attr(href)').extract()
             item['date'] = site.css('span.date::text').extract()
             items.append(item)
-
         return items

@@ -1,0 +1,3 @@
+Arachne
+MySQL-python==1.2.5
+SQLAlchemy==0.9.3

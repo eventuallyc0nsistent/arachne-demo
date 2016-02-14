@@ -1,4 +1,0 @@
-127.0.0.1 - - [25/Nov/2015:01:55:32 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"
-127.0.0.1 - - [25/Nov/2015:01:55:33 +0000] "GET /favicon.ico HTTP/1.1" 404 233 "http://localhost:8080/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"
-127.0.0.1 - - [25/Nov/2015:01:55:45 +0000] "GET /spiders/ HTTP/1.1" 200 52 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"
-127.0.0.1 - - [25/Nov/2015:01:55:54 +0000] "GET /run-spider/cg-spider HTTP/1.1" 200 37 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"
